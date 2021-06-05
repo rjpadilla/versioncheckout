@@ -13,7 +13,6 @@ jobs:
           cd TerminalImageViewer || exit 0
           workingver=e5ef996c4432054c05e5af6965d405933c8391d1
           currentver=$(git rev-parse HEAD)
-          [[ $workingver != $currentver ]] && echo "A new version has been released"
+          [[ $workingver != $currentver ]] && echo "A new version has been released, test and update the latest release."
           git checkout $workingver
-          
         )
