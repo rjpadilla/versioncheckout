@@ -6,7 +6,7 @@ jobs:
   check-repo-version:
     runs-on: ubuntu-latest
     steps:
-    - name: download repo
+    - name: check repo version
       run: |
         git clone https://github.com/stefanhaustein/TerminalImageViewer.git
         (
