@@ -12,5 +12,6 @@ jobs:
         (
           cd TerminalImageViewer || exit 0
           git rev-parse HEAD
+          git rev-parse HEAD^
           git checkout e5ef996c4432054c05e5af6965d405933c8391d1
         )
